@@ -1,0 +1,68 @@
+{
+    "name": "Luchadores Floors discord bot",
+    "description": "Search and display as embedded message luchadores.io floors by luchadores' attributes",
+    "keywords": [
+        "luchadores.io",
+        "nft",
+        "bot",
+        "opensea",
+        "tracker",
+        "discord"
+    ],
+    "website": "https://luchadores.io/",
+    "repository": "https://github.com/patobiskoto/LuchaFloorspy",
+    "logo": "https://www.gitbook.com/cdn-cgi/image/width=40,height=40,fit=contain,dpr=1,format=auto/https%3A%2F%2Fwhitepaper.luchadores.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fcollections%252F-MfRsJSsc1MWH0eTsxur%252Ficon%252F1wNmSQTrYy6oeCu0UGbu%252Flucha-logo.png%3Falt%3Dmedia%26token%3De5e766b1-9857-49aa-aed0-fd0c0d805736",
+    "env": {
+        "LUCHA_FLOOR_TOKEN_ID": {
+            "description": "bot token id"
+        },
+        "LUCHA_ICON_URL": {
+            "description": "url to Luchadores.io icon"
+        },
+        "OPENSEA_API_KEY": {
+            "description": "Opensea API key"
+        },
+        "EMBEDDED_DESCRIPTION_FLOORS": {
+            "description": "Embedded message description for floor message"
+        },
+        "EMBEDDED_DESCRIPTION_STATS": {
+            "description": "Embedded message description for stats message"
+        },
+        "DISCORD_CHANNEL_ID": {
+            "description": "Discord channel id used to send the embedded message"
+        },
+        "DATABASE_URL": {
+            "description": "Database URL"
+        },
+        "MONEY_VISUAL": {
+            "description": "Visual used for ETH logo"
+        },
+        "SLUG_USED": {
+            "description": "Collection slug (i.e.: luchadores-io)"
+        },
+        "BOT_NAME_PREFIX": {
+            "description": "Prefix for the bot's nickname"
+        },
+        "EMBED_TITLE_LUCHA_FLOORS": {
+            "description": "Title for floors embed message"
+        },
+        "EMBED_TITLE_LUCHA_STATS": {
+            "description": "Title for stats embed message"
+        },
+        "HIDDEN_MUSTACHE_CODE": {
+            "description": "Hidden mustache discord display tag"
+        },
+        "DUNE_LOGIN": {
+            "description": "dune.xyz login"
+        },
+        "DUNE_PWD": {
+            "description": "dune.xyz password"
+        },
+        "DUNE_QUERY_HIDDEN_MUSTACHE_IDS": {
+            "description": "dune.xyz query number for hidden mustaches ids"
+        },
+        "OPENSEA_ASSETS_CONTRACT_ADDRESS": {
+            "description": "Opensea assets contract adress"
+        }
+    }
+}
