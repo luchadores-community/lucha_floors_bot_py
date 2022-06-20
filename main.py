@@ -13,7 +13,7 @@ async def on_ready():
     print('LuchaFloors ready !')
     update_task.start()
 
-@tasks.loop(minutes=10.0)
+@tasks.loop(minutes=11.0)
 async def update_task():
     await luchaFloors.change_presence(activity=Activity(type=ActivityType.watching, name="Refreshing..."))
     await Processors.update_bot()
