@@ -18,12 +18,11 @@ class OpenseaQuerries:
         resp = requests.get(url=opensea_url, headers=headers)
         if resp.status_code != 200:
             print("Error. status_code=" + str(resp.status_code))
-            print(resp.text)
             return
         bswebpage = BeautifulSoup(resp.text, "html.parser")
 
         for assetCardFooter in bswebpage.findAll('div',{'class':'sc-1xf18x6-0 sc-1twd32i-0 sc-1wwz3hp-0 xGokL kKpYwv kuGBEl'}):
-            #for assetCardFooterPriceAmount in assetCardFooter.findAll('div', {'class':'AssetCardFooter--price-amount'}):
+            print(assetCardFooter)
             floor = assetCardFooter.findAll('div', {'class':'Price--amount'})[0].text.strip()
             print("-- floor = " + floor)
             return floor
