@@ -23,10 +23,10 @@ class OpenseaQuerries:
         bswebpage = BeautifulSoup(resp.text, "html.parser")
 
         for assetCardFooter in bswebpage.findAll('div',{'class':'sc-1xf18x6-0 sc-1twd32i-0 sc-1wwz3hp-0 xGokL kKpYwv kuGBEl'}):
-            for assetCardFooterPriceAmount in assetCardFooter.findAll('div', {'class':'AssetCardFooter--price-amount'}):
-                floor = assetCardFooterPriceAmount.findAll('div', {'class':'Price--amount'})[0].text.strip()
-                print("-- floor = " + floor)
-                return floor
+            #for assetCardFooterPriceAmount in assetCardFooter.findAll('div', {'class':'AssetCardFooter--price-amount'}):
+            floor = assetCardFooter.findAll('div', {'class':'Price--amount'})[0].text.strip()
+            print("-- floor = " + floor)
+            return floor
 
     async def get_collection_stats(slug):
         headers = {
